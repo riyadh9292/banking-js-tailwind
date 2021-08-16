@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center my-10 font-black	">This is my bank</h1>
+    </header>
+    <main class="w-5/6 mx-auto">
+        <section class="flex flex-row justify-around bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+            <div class="h-72 bg-yellow-900 font-extrabold text-4xl m-10 p-5 text-white rounded-2xl">Deposit <h1
+                    class="mt-6">$
+                    <span>00</span>
+                </h1>
+            </div>
+            <div class="h-72 bg-yellow-900 font-extrabold text-4xl m-10 p-5 text-white rounded-2xl">Withdraw<h1
+                    class="mt-6">$
+                    <span>00</span>
+                </h1>
+            </div>
+            <div class="h-72 bg-yellow-900 font-extrabold text-4xl m-10 p-5 text-white rounded-2xl">Balance<h1
+                    class="mt-6">
+                    $
+                    <span>00</span>
+                </h1>
+            </div>
+
+        </section>
+        <section class="flex flex-col items-center">
+            <header>
+                <h2 class="text-4xl my-10 text-yellow-800 font-bold ">Transact Your amount</h2>
+            </header>
+            <div class="flex justify-center">
+                <input type="text" placeholder="Enter your amount" id="transact-amount" size="40"
+                    class="border-2 border-gray-800 mr-8 h-12 bg-yellow-100	font-bold rounded-2xl">
+                <select class="bg-gradient-to-r from-yellow-800 via-red-300 to-grey-500 rounded" name=" option"
+                    id="transaction-type">
+                    <option value="">--Please choose an option--</option>
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+                </select>
+            </div>
+            <button
+                class="text-white font-black text-2xl bg-gradient-to-r from-pink-700 via-red-800 to-yellow-800 p-3 rounded-3xl mt-12">Transact</button>
+        </section>
+    </main>
+
+
+    <script src="banking.js"></script>
+</body>
+
+</html>
